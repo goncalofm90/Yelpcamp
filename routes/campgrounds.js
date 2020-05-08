@@ -1,6 +1,6 @@
+require('dotenv').config()
 var express = require("express");
 var router  = express.Router();
-var dotenv = require("dotenv");
 var Campground = require("../models/campground");
 var middleware = require("../middleware");
 var NodeGeocoder = require('node-geocoder');
