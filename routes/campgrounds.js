@@ -23,13 +23,13 @@ var cloudinary = require('cloudinary');
 cloudinary.config({ 
   cloud_name: 'goncalofm90', 
   api_key: 247768925719858, 
-  api_secret: process.env.CLOUDINARY_API_SECRET,
+  api_secret: "dKHEY97hZrVKY6-Cq8ZFxDSN1NA",
 });
  
 var options = {
   provider: 'google',
   httpAdapter: 'https',
-  apiKey: process.env.GEOCODER_API_KEY,
+  apiKey: "AIzaSyAszcznb-CYNwsu2HgQgPHlzi90NOe2jp0",
   formatter: null
 };
  
