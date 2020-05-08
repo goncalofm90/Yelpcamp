@@ -28,7 +28,7 @@ cloudinary.config({
 var options = {
   provider: 'google',
   httpAdapter: 'https',
-  apiKey: "AIzaSyAszcznb-CYNwsu2HgQgPHlzi90NOe2jp0",
+  apiKey: process.env.GEOCODER_API_KEY,
   formatter: null
 };
  
