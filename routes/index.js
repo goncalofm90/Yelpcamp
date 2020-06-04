@@ -24,7 +24,7 @@ router.post("/register", function(req, res){
 		 avatar: req.body.avatar,
 		 email: req.body.email,
 		});
-	if(req.body.adminCode === "admincode123"){
+	if(req.body.adminCode === "admincodehere"){
 		newUser.isAdmin = true;
 	}
     User.register(newUser, req.body.password, function(err, user){
@@ -91,7 +91,7 @@ router.post('/forgot', function(req, res, next) {
       var smtpTransport = nodemailer.createTransport({
         service: 'Gmail', 
         auth: {
-          user: 'goncalofm90@gmail.com',
+          user: 'usernamehere',
           pass: process.env.GMAILPW
         }
       });
@@ -155,7 +155,7 @@ router.post('/reset/:token', function(req, res) {
       var smtpTransport = nodemailer.createTransport({
         service: 'Gmail', 
         auth: {
-          user: 'learntocodeinfo@gmail.com',
+          user: 'emailhere',
           pass: process.env.GMAILPW
         }
       });
