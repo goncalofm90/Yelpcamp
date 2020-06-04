@@ -20,7 +20,7 @@ var commentRoutes    = require("./routes/comments"),
 
 //mongoose.connect('mongodb://localhost/yelp_camp' ,{ useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect('databaseurlhere' ,{ useNewUrlParser: true, useUnifiedTopology: true });
-//mongodb+srv://goncalofm90:<password>@cluster0-jyjnc.mongodb.net/test?retryWrites=true&w=majority
+//mongodb+srv://<user>:<password>@cluster0-jyjnc.mongodb.net/test?retryWrites=true&w=majority
 mongoose.set('useCreateIndex', true)
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
