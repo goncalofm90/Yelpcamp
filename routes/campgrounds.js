@@ -21,15 +21,15 @@ var upload = multer({ storage: storage, fileFilter: imageFilter})
 
 var cloudinary = require('cloudinary');
 cloudinary.config({ 
-  cloud_name: 'goncalofm90', 
-  api_key: 247768925719858, 
-  api_secret: "dKHEY97hZrVKY6-Cq8ZFxDSN1NA",
+  cloud_name: 'cloudname', 
+  api_key: apikeyhere, 
+  api_secret: "apisecretkeyhere",
 });
  
 var options = {
   provider: 'google',
   httpAdapter: 'https',
-  apiKey: "AIzaSyAszcznb-CYNwsu2HgQgPHlzi90NOe2jp0",
+  apiKey: "apikeyhere",
   formatter: null
 };
  
